@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Jana Kowalskiego</title> <!--nazwa/tytuł strony-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png"> <!--favicon - ikona strony internetowej, widoczna na pasku adresu przeglądarki i na kracie otwartej strony www.-->
+    <!--unikalny kod osadzania zestawu-->
+    <script src="https://kit.fontawesome.com/3de6ca9879.js" crossorigin="anonymous"></script> <!--link do fontawesome: https://fontawesome.com/ -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo"><!--miejsce na autorskie logo-->
+                <ul id="sidemenu">
+                    <li><a href="#about">O mnie<!--About--></a></li>
+                    <li><a href="#services">Usługi<!--Services--></a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Kontakt<!--Contact--></a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!--ikonę pobrać z https://fontawesome.com/icons/categories (ten obszar dotyczy urządzeń mobilnych)-->
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories (ten obszar dotyczy urządzeń mobilnych)-->
+                <div class="toggle-btn" id="btn">
+                    <span id="btnText">Jasny</span><!--Light-->
+                    <img src="images/sun.png" id="btnIcon">
+                </div>
+            </nav>
+            <div class="header-text">
+                <h1 class="slide-left">Witam, nazywam się <span>Jan Kowalski.</span></h1> <!--miejsce na przedstawienie swojej osoby-->
+                <p class="slide-left">Chciałbym zaprezentować moje portfolio.</p> <!--krótki opis czego dotyczy strona-->
+            </div>
+        </div>
+    </div>
+    <!--ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about me.png"><!--miejsce na zdjęcie biznesowe-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">O mnie<!--About Me--></h1>
+                    <p>Jestem analitykiem biznesowym z bogatym doświadczeniem w księgowości i programowaniu. Moja pasja do analizy danych oraz automatyzacji procesów biznesowych pozwala mi dostarczać wartościowe rozwiązania dla moich klientów.</p><!--klika słów o sobie-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Umiejętności</p><!--Skills-->
+                        <p class="tab-links" onclick="opentab('experience')">Doświadczenie</p><!--Experience-->
+                        <p class="tab-links" onclick="opentab('education')">Edukacja</p><!--Education-->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Analiza biznesowa</span><br>Skutecznie przeprowadzam analizy biznesowe, identyfikując kluczowe wskaźniki oraz optymalizując procesy.</li><!--opis umiejętności-->
+                            <li><span>Rachunkowość</span><br>Posiadam szeroką wiedzę w zakresie rachunkowości, w tym w zarządzaniu finansami oraz przygotowywaniu raportów.</li><!--opis umiejętności-->
+                            <li><span>Programowanie</span><br>Specjalizuję się w Pythonie, C++ i C#, tworząc rozwiązania analizujące dane oraz automatyzujące procesy biznesowe.</li><!--opis umiejętności-->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2017 - 2024<!--Current--></span><br>Analityk biznesowy w Copernicus Corporation</li><!--doświadczenie zawodowe-->
+                            <li><span>2011 - 2017</span><br>Księgowy w Fiskus Financial Services</li><!--doświadczenie zawodowe-->
+                            <li><span>2011 - 2011</span><br>Staże zawodowe w różnych firmach</li><!--doświadczenie zawodowe-->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2027</span><br>Uniwersytet Ekonomiczny we Wrocławiu, Magister Analizy Biznesowej</li><!--edukacja i ukończone kursy-->
+                            <li><span>2025</span><br>Uniwersytet Ekonomiczny we Wrocławiu, Licencjat z Księgowości</li><!--edukacja i ukończone kursy-->
+                            <li><span>2011</span><br>Technikum Ekonomiczne nr 13, Wrocław</li><!--edukacja i ukończone kursy-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Moje usługi<!--My Services--></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-gears"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
+                    <h2>Analityk biznesowy</h2><!--stanowisko-->
+                    <p>Oferuję kompleksowe analizy biznesowe, pomagając firmom zwiększyć ich efektywność oraz zyski.</p><!--opis posiadanych umiejętności-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
+                    <h2>Księgowy</h2><!--stanowisko-->
+                    <p>Świadczę usługi księgowe, w tym zarządzanie finansami oraz przygotowywanie raportów finansowych.</p><!--opis posiadanych umiejętności-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories-->
+                    <h2>Informatyk</h2><!--stanowisko-->
+                    <p>Tworzę rozwiązania programistyczne w Pythonie, C++ i C#, optymalizujące oraz automatyzujące procesy biznesowe.</p><!--opis posiadanych umiejętności-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class ="container">
+            <h1 class="sub-title">Moje portfolio<!--My Work--></h1><!--href="https://drive.google...."-->
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/my work 1.png"><!--zdjęcie związane z zainteresowaniami-->
+                    <div class="layer">
+                        <h3>kurs Ms Project</h3><!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
+                        <a href="https://www.comarch.pl/szkolenia/aplikacje-biurowe/ms-project/microsoft-project-kurs-podstawowy/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/my work 2.png"><!--zdjęcie związane z zainteresowaniami-->
+                    <div class="layer">
+                        <h3>kurs Ms Excel</h3><!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
+                        <a href="https://www.comarch.pl/szkolenia/aplikacje-biurowe/excel/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/my work 3.png"><!--zdjęcie związane z zainteresowaniami-->
+                    <div class="layer">
+                        <h3>kurs Python</h3><!--wykonane projekty, które można połączyć z dyskiem Google lub odwołanie do strony, na której realizowano jakiś kurs-->
+                        <a href="https://www.comarch.pl/szkolenia/programowanie/python/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--<a href="#" class="btn">BACK</a>-->
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Kontakt ze mną<!--Contact Me--></h1>
+                    <p><i class="fa-solid fa-envelope"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories--><a href="mailto:jan.kowalski@ue.wroc.pl" target="_blank">jan.kowalski@ue.wroc.pl</a></p><!--adres e-mail-->
+                    <p><i class="fa-sharp fa-solid fa-square-phone"><!--ikonę pobrać z https://fontawesome.com/icons/categories--></i>+48 123 456 789</p><!--numer telefonu-->
+                    <p><i class="fa-brands fa-linkedin"></i><!--ikonę pobrać z https://fontawesome.com/icons/categories--><a href="https://www.linkedin.com/in/jan-kowalski-612050314" target="_blank">linkedin.com/in/jan-kowalski</a></p><!--link do linkedin-->
+                    <a href="images/CV.pdf" download target="_blank" class="btn btn2">Pobierz CV<!--Download CV--></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type name="Name" placeholder="Twoje imię" required><!--"Your Name"-->
+                        <input type="email" name="Email" placeholder="Twój adres email" required><!--"Your Email"-->
+                        <textarea name="Message" rows="6" placeholder="Twoja wiadomość"></textarea><!--"Your Message"-->
+                        <button type="submit" class="btn btn2">Wyślij</button><!--Submit-->
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"><h1 class="sub-title" style="font-size: 100%;">POWRÓT NA GÓRĘ STRONY</h1></a><!--BACK TO TOP-->
+        <div class="copyright">
+            <p>Prawa autorskie: Maryia Sobal, Mateusz Lisik, Maksim Mazanets</p><!--Copyright by Maryia Sobal, Mateusz Lisik, Maksim Mazanets-->
+        </div>
+    </div>
+    <!--skrypt dotyczący ABOUT-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!--skrypt dla urządzeń mobilnych-->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <!--link do Google Add Script: https://www.google.com/script/start/-->
+    <script>
+        const scriptURL = 'https:...'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e =>
+        {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>
+            {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!--skrypt do zmany koloru strony-->
+    <script>
+        let btn = document.getElementById("btn");
+        let btnText = document.getElementById("btnText");
+        let btnIcon = document.getElementById("btnIcon");
+        btn.onclick = function()
+        {
+            document.body.classList.toggle("light-theme");
+            if(document.body.classList.contains("light-theme"))
+            {
+                btnIcon.src = "images/moon.png";
+                btnText.innerHTML = "Ciemny";/*"Dark"*/
+            }
+            else
+            {
+                btnIcon.src = "images/sun.png";
+                btnText.innerHTML = "Jasny";/*"Light"*/
+            }
+        }
+    </script>
+</body>
+</html>
